@@ -1,0 +1,51 @@
+generated: '2026-08-06'
+method: probed
+source: live GET of the /.well-known/ discovery surface on avicena.tech
+host: https://avicena.tech
+note: >-
+  Every /.well-known/ path probed returned the WordPress 404 template (HTML, not the
+  requested document). No discovery document was found, so no raw files were saved and
+  NO `WellKnown` / `SecurityTxt` pointer is wired in apis.yml — an all-miss probe is a
+  record of what was checked, not evidence that the provider publishes a well-known
+  catalog. Do not add a pointer on a later round unless a real 200 JSON/text document
+  appears here.
+documents:
+- path: /.well-known/security.txt
+  status: 404
+- path: /.well-known/openid-configuration
+  status: 404
+- path: /.well-known/oauth-authorization-server
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404
+- path: /.well-known/agent-card.json
+  status: 404
+- path: /.well-known/agent.json
+  status: 404
+also_probed:
+- path: /openapi.json
+  status: 404
+- path: /openapi.yaml
+  status: 404
+- path: /swagger.json
+  status: 404
+- path: /api-docs
+  status: 404
+- path: /docs
+  status: 404
+- path: /redoc
+  status: 404
+- path: /llms.txt
+  status: 404
+- path: /robots.txt
+  status: 200
+- path: /sitemap.xml
+  status: 200
+- path: /wp-json/
+  status: 200
+  note: >-
+    Default WordPress REST API discovery document exposed by the marketing CMS. It is
+    site infrastructure, not a product API — no OpenAPI was harvested from it and it is
+    not registered as an API in apis.yml.
