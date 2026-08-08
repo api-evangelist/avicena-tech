@@ -1,7 +1,19 @@
 aid: avicena-tech
 name: Avicena Tech
-description: 'Avicena Tech is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: 'Avicena Tech Corp. is a privately held semiconductor company founded
+  in 2019 and headquartered in Sunnyvale, California, with a subsidiary in Edinburgh,
+  Scotland. Avicena develops LightBundle, a microLED-based optical interconnect architecture
+  for chip-to-chip, die-to-die and rack-scale links in AI/ML training clusters, high-performance
+  computing, memory disaggregation, sensors, 5G wireless and aerospace. The technology
+  pairs patented microLED emitter arrays with photodetector arrays and an integrated
+  ASIC, supporting greater than 1Tbps/mm shoreline density at sub-picojoule-per-bit
+  energy efficiency over reaches beyond 10 meters. The company ships a LightBundle
+  eKit evaluation system to AI infrastructure customers and is backed by Tiger Global,
+  SK hynix, Samsung Catalyst Fund, Micron Ventures, Clear Ventures, Cerberus Capital
+  Management, Hitachi Ventures, LAM Research, Maverick Silicon, Prosperity7 Ventures
+  and VentureTech Alliance. Avicena is a hardware and photonics company: it publishes
+  no public developer program, API, SDK or machine-readable specification.'
+image: https://avicena.tech/wp-content/uploads/2022/06/cropped-Avicena_2022_logo_site-icon-192x192.png
 url: https://raw.githubusercontent.com/api-evangelist/avicena-tech/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
@@ -12,6 +24,14 @@ created: '2026-08-06'
 modified: '2026-08-06'
 tags:
 - Company
+- Semiconductors
+- Photonics
+- Optical Interconnects
+- microLED
+- Data Center Infrastructure
+- Artificial Intelligence
+- High Performance Computing
+- Hardware
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +39,58 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/avicena-tech-domain-security.yml
+- type: LLMsTxt
+  url: llms/avicena-tech-llms.txt
 - type: Website
-  url: https://www.nasdaqprivatemarket.com/
+  url: https://avicena.tech/
+- type: Technology
+  url: https://avicena.tech/technology/
+- type: Applications
+  url: https://avicena.tech/applications/
+- type: About
+  url: https://avicena.tech/company/
+- type: Blog
+  url: https://avicena.tech/press-releases/
+- type: BlogRSS
+  url: https://avicena.tech/feed/
+- type: Contact
+  url: https://avicena.tech/contact/
+- type: Careers
+  url: https://avicena.tech/careers/
+- type: CustomerPortal
+  url: https://avicena.tech/customer-portal-login/
+- type: TermsOfService
+  url: https://avicena.tech/website-terms-of-use/
+- type: LinkedIn
+  url: https://www.linkedin.com/company/avicena-tech/
+- type: Twitter
+  url: https://twitter.com/AvicenaTech
+- type: Crunchbase
+  url: https://www.crunchbase.com/organization/avicena-tech
+x-enrichment:
+  date: '2026-08-06'
+  status: minimal
+  artifacts_added: 3
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: not-a-software-company
+  detail: >-
+    Avicena sells microLED optical-interconnect silicon and the LightBundle eKit
+    evaluation hardware, not software; the only credentialed surface on avicena.tech is
+    a SuiteDash-hosted customer portal for eKit buyers, and every contract-discovery
+    path on the marketing site returned the WordPress 404 template.
+  evidence:
+  - url: https://avicena.tech/openapi.json
+    status: 404
+  - url: https://avicena.tech/.well-known/agent-card.json
+    status: 404
+  - url: https://avicena.tech/.well-known/security.txt
+    status: 404
+  - url: https://avicena.tech/llms.txt
+    status: 404
+  - url: https://avicena.tech/customer-portal-login/
+    status: 200
+  checked: '2026-08-06'
