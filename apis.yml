@@ -13,6 +13,17 @@ description: 'Avicena Tech Corp. is a privately held semiconductor company found
   Management, Hitachi Ventures, LAM Research, Maverick Silicon, Prosperity7 Ventures
   and VentureTech Alliance. Avicena is a hardware and photonics company: it publishes
   no public developer program, API, SDK or machine-readable specification.'
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://avicena.tech/wp-content/uploads/2022/06/cropped-Avicena_2022_logo_site-icon-192x192.png
 url: https://raw.githubusercontent.com/api-evangelist/avicena-tech/refs/heads/main/apis.yml
 x-type: company
